@@ -44,7 +44,7 @@ export default function Terms() {
       </Section>
 
       <Section title="6. Intellectual Property">
-        ApexPulse is developed by Campers Construction LLC. Apex Legends is a trademark of Respawn Entertainment and Electronic Arts. This App is not affiliated with, endorsed by, or sponsored by Respawn Entertainment, Electronic Arts, or Overwolf.
+        ApexPulse is developed by ApexPulse. Apex Legends is a trademark of Respawn Entertainment and Electronic Arts. This App is not affiliated with, endorsed by, or sponsored by Respawn Entertainment, Electronic Arts, or Overwolf.
       </Section>
 
       <Section title="7. Disclaimer of Warranties">

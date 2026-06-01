@@ -70,7 +70,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-white/5 py-6 text-center text-white/20 text-xs">
-        &copy; 2026 Campers Construction LLC. Apex Legends is a trademark of Respawn Entertainment / Electronic Arts.
+        &copy; 2026 ApexPulse. Apex Legends is a trademark of Respawn Entertainment / Electronic Arts.
       </div>
     </footer>
   );
