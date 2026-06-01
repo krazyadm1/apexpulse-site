@@ -78,18 +78,16 @@ export default function Home() {
         <p className="text-center text-white/40 mb-10 sm:mb-12 max-w-xl mx-auto text-sm sm:text-base">Clean dashboard, live overlay, deep analytics.</p>
         <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
           {[
-            'Dashboard Overview',
-            'Live Match Overlay',
-            'Legend Analytics',
-            'Stats & Headshot Diagram',
-            'Map Rotations',
-            'Match History Detail',
-          ].map((label) => (
-            <div key={label} className="snap-center shrink-0 w-80 sm:w-96 aspect-video glass-card flex items-center justify-center border-dashed border-white/20">
-              <div className="text-center">
-                <div className="text-white/20 text-sm mb-1">{label}</div>
-                <div className="text-white/10 text-xs">Screenshot coming soon</div>
-              </div>
+            { label: 'Welcome', src: '/screenshots/welcome.webp' },
+            { label: 'Dashboard', src: '/screenshots/dashboard.webp' },
+            { label: 'Statistics', src: '/screenshots/stats.webp' },
+            { label: 'Weapon Analytics', src: '/screenshots/weapons.webp' },
+            { label: 'Legend Analytics', src: '/screenshots/legends.webp' },
+            { label: 'Map Rotations', src: '/screenshots/maps.webp' },
+          ].map((item) => (
+            <div key={item.label} className="snap-center shrink-0 w-80 sm:w-[480px] glass-card p-2 overflow-hidden">
+              <img src={item.src} alt={item.label} className="w-full rounded-md" loading="lazy" />
+              <p className="text-center text-white/30 text-xs mt-2">{item.label}</p>
             </div>
           ))}
         </div>
