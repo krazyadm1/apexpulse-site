@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#050B14]/80 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-[#00E5FF] font-bold text-lg tracking-tight">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 text-[#00E5FF] font-bold text-base sm:text-lg tracking-tight">
           APEXPULSE
         </Link>
-        <div className="flex items-center gap-6 text-sm">
-          <Link href="/#features" className="text-white/60 hover:text-white transition-colors">Features</Link>
-          <Link href="/download" className="text-white/60 hover:text-white transition-colors">Download</Link>
+        <div className="flex items-center gap-3 sm:gap-6 text-sm">
+          <Link href="/#features" className="hidden sm:block text-white/60 hover:text-white transition-colors">Features</Link>
+          <Link href="/download" className="hidden sm:block text-white/60 hover:text-white transition-colors">Download</Link>
           <Link href="https://discord.gg/zcgMzRwJFv" target="_blank" className="text-white/60 hover:text-white transition-colors">Discord</Link>
-          <Link href="/download" className="bg-[#00E5FF] text-[#050B14] font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity text-sm">
+          <Link href="/download" className="bg-[#00E5FF] text-[#050B14] font-semibold px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg hover:opacity-90 transition-opacity text-xs sm:text-sm">
             Get ApexPulse
           </Link>
         </div>
@@ -41,7 +41,7 @@ function Nav() {
 function Footer() {
   return (
     <footer className="border-t border-white/10 mt-auto">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-sm">
         <div>
           <h3 className="text-[#00E5FF] font-bold mb-3">ApexPulse</h3>
           <p className="text-white/40 leading-relaxed">The Apex Legends tracker that actually works. Free, local, private.</p>
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${outfit.variable} ${dmSans.variable} ${jetbrains.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Nav />
-        <main className="flex-1 pt-16">{children}</main>
+        <main className="flex-1 pt-14 sm:pt-16">{children}</main>
         <Footer />
       </body>
     </html>
