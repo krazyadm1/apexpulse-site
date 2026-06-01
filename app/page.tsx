@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScreenshotCarousel from "./components/ScreenshotCarousel";
 
 function Icon({ d, className = "" }: { d: string; className?: string }) {
   return (
@@ -76,21 +77,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">See it in action.</h2>
         <p className="text-center text-white/40 mb-10 sm:mb-12 max-w-xl mx-auto text-sm sm:text-base">Clean dashboard, live overlay, deep analytics.</p>
-        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
-          {[
-            { label: 'Welcome', src: '/screenshots/welcome.webp' },
-            { label: 'Dashboard', src: '/screenshots/dashboard.webp' },
-            { label: 'Statistics', src: '/screenshots/stats.webp' },
-            { label: 'Weapon Analytics', src: '/screenshots/weapons.webp' },
-            { label: 'Legend Analytics', src: '/screenshots/legends.webp' },
-            { label: 'Map Rotations', src: '/screenshots/maps.webp' },
-          ].map((item) => (
-            <div key={item.label} className="snap-center shrink-0 w-80 sm:w-[480px] glass-card p-2 overflow-hidden">
-              <img src={item.src} alt={item.label} className="w-full rounded-md" loading="lazy" />
-              <p className="text-center text-white/30 text-xs mt-2">{item.label}</p>
-            </div>
-          ))}
-        </div>
+        <ScreenshotCarousel />
       </section>
 
       {/* Privacy callout */}
