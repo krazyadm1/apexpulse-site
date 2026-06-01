@@ -59,7 +59,7 @@ function Footer() {
           <div className="flex flex-col gap-2">
             <Link href="https://discord.gg/zcgMzRwJFv" target="_blank" className="text-white/40 hover:text-white transition-colors">Discord</Link>
             <Link href="https://github.com/krazyadm1/ApexPulse" target="_blank" className="text-white/40 hover:text-white transition-colors">GitHub</Link>
-            <Link href="https://ko-fi.com/apexpulse" target="_blank" className="text-white/40 hover:text-white transition-colors">Support Us</Link>
+            <Link href="https://ko-fi.com/krazyadm" target="_blank" className="text-white/40 hover:text-white transition-colors">Support Us</Link>
           </div>
         </div>
         <div>
