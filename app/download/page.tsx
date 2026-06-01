@@ -14,7 +14,9 @@ export default function Download() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {/* Overwolf */}
         <div className="glass-card flex flex-col items-center text-center py-10">
-          <div className="text-4xl mb-4">🐺</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-white/30 mb-4">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
+          </svg>
           <h2 className="text-xl font-bold mb-2">Overwolf App Store</h2>
           <p className="text-white/40 text-sm mb-6">Recommended. Auto-updates, easy install.</p>
           <span className="bg-white/10 text-white/30 font-medium px-6 py-3 rounded-lg text-sm cursor-not-allowed">
@@ -25,7 +27,9 @@ export default function Download() {
 
         {/* GitHub */}
         <div className="glass-card flex flex-col items-center text-center py-10 border-[#00E5FF]/20">
-          <div className="text-4xl mb-4">⬇️</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-[#00E5FF] mb-4">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+          </svg>
           <h2 className="text-xl font-bold mb-2">Direct Download</h2>
           <p className="text-white/40 text-sm mb-6">Latest release from GitHub.</p>
           <Link

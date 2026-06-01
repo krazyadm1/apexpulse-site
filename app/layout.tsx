@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Outfit, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const inter = Inter({ variable: "--font-geist-sans", subsets: ["latin"] });
-const jetbrains = JetBrains_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const outfit = Outfit({ variable: "--font-heading", subsets: ["latin"], weight: ["400", "600", "700"] });
+const dmSans = DM_Sans({ variable: "--font-body", subsets: ["latin"] });
+const jetbrains = JetBrains_Mono({ variable: "--font-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ApexPulse — The Apex Legends Tracker That Actually Works",
@@ -78,7 +79,7 @@ function Footer() {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrains.variable} h-full antialiased`}>
+    <html lang="en" className={`${outfit.variable} ${dmSans.variable} ${jetbrains.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Nav />
         <main className="flex-1 pt-16">{children}</main>
