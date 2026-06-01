@@ -72,6 +72,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Screenshots */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">See it in action.</h2>
+        <p className="text-center text-white/40 mb-10 sm:mb-12 max-w-xl mx-auto text-sm sm:text-base">Clean dashboard, live overlay, deep analytics.</p>
+        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+          {[
+            'Dashboard Overview',
+            'Live Match Overlay',
+            'Legend Analytics',
+            'Stats & Headshot Diagram',
+            'Map Rotations',
+            'Match History Detail',
+          ].map((label) => (
+            <div key={label} className="snap-center shrink-0 w-80 sm:w-96 aspect-video glass-card flex items-center justify-center border-dashed border-white/20">
+              <div className="text-center">
+                <div className="text-white/20 text-sm mb-1">{label}</div>
+                <div className="text-white/10 text-xs">Screenshot coming soon</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Privacy callout */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="glass-card text-center py-8 sm:py-12 border-[#00E5FF]/20">
